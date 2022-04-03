@@ -5,3 +5,4 @@ for i in range(1):
 lst=list(['i','love','learn','python'])
 for a in lst:
     print(a)
+#i make a list, and put some things in it
