@@ -1,6 +1,5 @@
-for i in range(10):
-    print (i)
-for i in range(5):
-    print (1)
-for i in range(5):
-    print (3)
+for i in range(1):
+    print ("now i can use git")
+    print("i will try to make a list")
+
+
