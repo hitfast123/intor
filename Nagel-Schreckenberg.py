@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import matplotlib
+import  matplotlib
+matplotlib.use('TKAgg')
 from matplotlib.font_manager import *
 import matplotlib.pyplot as plt
 import numpy as np
@@ -63,7 +64,6 @@ def Run(path=5000, n=100, v0=60, ltv=120, p=0.3, times=3000):
     plt.show()
 
 
-if __name__ == '__main__':
     # Run(v0=0)
     # Run(v0=20)
     # Run(v0=40)
@@ -72,6 +72,6 @@ if __name__ == '__main__':
     # Run(p=0.0)
     # Run(p=0.1)
     # Run(p=0.3)
-    Run(p=0.5)
+Run(p=0.5)
 # Run(p=0.8)
 # Run(p=1.0)
