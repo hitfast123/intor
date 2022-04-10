@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 
 import  matplotlib
-matplotlib.use('TKAgg')
 from matplotlib.font_manager import *
 import matplotlib.pyplot as plt
 import numpy as np
 
-myfont = FontProperties(fname='ns.ttc')
+
 matplotlib.rcParams['axes.unicode_minus'] = False
 np.random.seed(0)
 
@@ -57,9 +56,9 @@ def Run(path=5000, n=100, v0=60, ltv=120, p=0.3, times=3000):
     # 展示
     plt.xlim(0, path)
     plt.ylim(0, times)
-    plt.xlabel(u'车辆位置', fontproperties=myfont)
-    plt.ylabel(u'模拟时间', fontproperties=myfont)
-    plt.title(u'交通模拟(车道长度%d,车辆数%d,初速度%s,减速概率%s)' % (path, n, v0, p), fontproperties=myfont)
+    plt.xlabel(u'车辆位置')
+    plt.ylabel(u'模拟时间')
+    plt.title(u'交通模拟(车道长度%d,车辆数%d,初速度%s,减速概率%s)' % (path, n, v0, p))
     # plt.tight_layout(pad=2)
     plt.show()
 
